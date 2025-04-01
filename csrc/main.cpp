@@ -7,9 +7,9 @@ extern "C" {
 }
 
 int c_main(const int argc, const char* const* const argv) {
-   cout << "Hello, ccargo!!\n";
+   cout << "Hello, ccargo!!" << endl;
    for (int i = 0; i < argc; i++) {
       cout << i << ": " << argv[i] << endl;
    }
-   return 0;
+   return argc - 1;
 }
